@@ -1,5 +1,5 @@
-# CloudSound
-CloudSound aims to bring the experience of enjoying music among friend or individuals with similar interests in music. Through the use of AWS services, our web application allows users to connect their CloudSound device to their account. Where they can upload/download files, connect and make friends, manage a their file lists, and participate in a group music sessions.
+# CloudMusic
+CloudMusic aims to bring the experience of enjoying music among friend or individuals with similar interests in music. Through the use of AWS services, our web application allows users to connect their CloudMusic device to their account. Where they can upload/download files, connect and make friends, manage a their file lists, and participate in a group music sessions.
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine.
@@ -26,7 +26,7 @@ npm install -g @aws-amplify/cli
 amplify configure
 ```
 
-#### CloudSound device
+#### CloudMusic device
 
 * Python version 3.7, but should would with 3.5 and higher.
 
@@ -66,7 +66,7 @@ source ~/.bash_profile
 pip3 install pytest
 ```
 ### Installing
-These steps will guide to setting up both the companion app and the cloudsound device.  **Note: The current steps require you to have access to a IAM role from the AWS management console. Without access to the IAM role you will not be able to run the CloudSound device** 
+These steps will guide to setting up both the companion app and the cloudsound device.  **Note: The current steps require you to have access to a IAM role from the AWS management console. Without access to the IAM role you will not be able to run the CloudMusic device** 
 
 #### Companion-app
 Run the following command on your desktop/laptop before running the web application. Follow the prompts and when asked for a region ensure you use **us-west-2**.
@@ -92,7 +92,7 @@ With this all done you should have started the development server and the web sh
 https://localhost:3000
 ```
 
-#### CloudSound Device
+#### CloudMusic Device
 Before you run the necessary executables, you need to ensure that the device has your IAM role configure on the device. To do so run the following the prompts. When asked for a region ensure you use **us-west-2**.
 
 ```
@@ -105,7 +105,7 @@ Once this is done you need to run the following executables in the order they ar
 python3 server.py
 ```
 
-* CloudSound - Audio playback located in AudioEngine/ directory of the project. First cd into the directory and make the executable on the device.
+* CloudMusic - Audio playback located in AudioEngine/ directory of the project. First cd into the directory and make the executable on the device.
 ```
 make build CPU=armhf CONFIG=Release
 ```
@@ -119,7 +119,7 @@ It should be noted that we need to run the server.py first before the cloundsoun
 ### Running tests
 The tests for each component can be ran using the following comands.
 
-* CloudSound - Ensure you are in the AudioEngine/ directory
+* CloudMusic - Ensure you are in the AudioEngine/ directory
 ```
 make test CPU=armhf CONFIG=Release
 ./audio_test
