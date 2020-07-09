@@ -1,5 +1,5 @@
 # CloudMusic
-CloudMusic aims to bring the experience of enjoying music among friends within their own homes. Through the use of AWS services, our web application allows you to upload/download files, connect with and make friends, and participate in a group music sessions.
+CloudMusic aims to bring the experience of enjoying music among friends within their own homes. Through the use of AWS services, our web application allows you to upload you audio files and play them individually with different effects, or with a group of friends remotely. 
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine.
